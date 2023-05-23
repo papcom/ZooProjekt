@@ -20,10 +20,11 @@ namespace ZooProjekt
             skötare1.LäggTillDjur(lejon);
             skötare2.LäggTillDjur(örn);
 
-            // Hämta skötarens ansvariga djur och visa informationen
+            // Hämta skötarens ansvariga djur
             List<Djur> ansvarigaDjurSkötare1 = skötare1.GetAnsvarigaDjur();
             List<Djur> ansvarigaDjurSkötare2 = skötare2.GetAnsvarigaDjur();
 
+            // Visa informationen
             Console.WriteLine("Skötare 1 - " + skötare1.GetNamn() + ":");
             foreach (Djur djur in ansvarigaDjurSkötare1)
             {
