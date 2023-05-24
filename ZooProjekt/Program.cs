@@ -12,13 +12,17 @@ namespace ZooProjekt
         {
             // Skapa några djur och skötare
             Däggdjur lejon = new Däggdjur("Lejon", 5);
+            Däggdjur björn = new Däggdjur("Björn", 15);
             Fågel örn = new Fågel("Örn", 10);
+            Fågel papegoja = new Fågel("Papegoja", 50);
             Skötare skötare1 = new Skötare("Alice");
             Skötare skötare2 = new Skötare("Bob");
 
             // Lägg till djur i skötarnas ansvar
             skötare1.LäggTillDjur(lejon);
+            skötare1.LäggTillDjur(björn);
             skötare2.LäggTillDjur(örn);
+            skötare2.LäggTillDjur(papegoja);
 
             // Hämta skötarens ansvariga djur
             List<Djur> ansvarigaDjurSkötare1 = skötare1.GetAnsvarigaDjur();
